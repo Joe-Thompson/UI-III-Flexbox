@@ -61,12 +61,12 @@ h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
-}
-
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-.container {
-	margin: 0 auto;
-	width: fit-content;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 1.5;
 	}
 	.head {
 		height: 20px;
@@ -81,72 +81,68 @@ h1, h2, h3, h4, h5 {
 		text-decoration: none;
 		color: lightgray;
 		margin: 20px;
-		padding: 10px;
-	}
-	.slogan-left {
-		font-size: 75px;
-		text-align: center;
-		line-height: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		width: 450px;
-		margin-bottom: 0;
-	}
-	.slogan-right {
-		display: inline-block;	
-		width: fit-content;
-	}
-	.slogan-photo {
-		height: 350px;
-		width: 350px;
-	}
-	.slogan {
-		display: flex;
-		width: 100%;
-		box-sizing: border-box;
-		margin: 20px;
-		padding: 25px;
-		margin-top: 50px;
-		height: auto;
-	}
-	button {
-		align-self: center;
-		justify-self: center;
-		background-color: white;
-		width: 150px;
-		height: 40px;
-		margin-top: 0;
-	}
-	.top-Previews {
-		border-top: 1px solid black;
-	}
-	.bottom-Previews {
-		border-bottom: 1px solid black;
-		padding: 15px;
-	}
-	article {
-		display: inline-block;
-		height: 50px;
-		width: 460px;
-		line-height: 1.4;
-		padding: 10px;
-	}	
-	.photoBreak {
-		margin: 15px;
-	}
-	.bottom-Previews article {
-		padding: 10px;
-		width: 300px;
-	}
-	address {
-		margin-top: 20px;
-		display: inline-block;
-		line-height: 1.2;
-	}
-	.street p {
-		line-height: 1;
-	}
-	#cite {
-		text-align: center;
-	}
+    padding: 10px;
+  }
+  .intro-services {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: fit-content;
+    justify-content: center;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  .intro-services img {
+    display: flex;
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .intro-services p, h3 {
+    display: inline-block;
+    padding-left: 510px;
+    padding-right: 510px;
+    padding-top: 10px;
+    margin-bottom: 25px;
+  }
+  .service-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    border-top: 1px solid black;
+  }
+  article {
+    width: 45%;
+    background-color: gainsboro;
+    margin: 20px;
+    padding: 10px;
+  }
+  button {
+    margin: 20px;
+    margin-left: 0;
+    padding: 5px 20px 5px 20px;
+    border-radius: 14%;
+    background-color: white;
+  }
+  .serviceFacts {
+    padding: 20px;
+    line-height: 1;
+    border-top: 1px solid black;
+  }
+  .funFacts {
+    display: flex;
+    align-content: space-between;
+    margin-bottom: 20px;
+  }
+  li {
+    list-style-type: square;
+    line-height: 2;
+    margin-right: 350px;
+    padding: 10px;
+  }
+  .services-info-img {
+    display: flex;
+  }
+ 
